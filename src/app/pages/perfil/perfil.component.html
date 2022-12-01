@@ -1,0 +1,27 @@
+<div class="perfilMain">
+    <div class="perfil1">
+        <img src={{miUsuario.url}} class="imgPerfil">
+        <h1>{{miUsuario.nombre}} {{miUsuario.apellidos}}</h1>
+        <div class="datoPerfil">
+            <label>Nombre</label>
+            <input class="inputForm" id="name" placeholder={{miUsuario.nombre}}>
+        </div>
+        <div class="datoPerfil">
+            <label>Apellido</label>
+            <input class="inputForm" id="surname" placeholder={{miUsuario.apellidos}}>
+        </div>
+        <div class="datoPerfil">
+            <label>Correo</label>
+            <input class="inputForm" id="email" placeholder={{miUsuario.correo}}>
+        </div>
+    </div>
+    <div class="perfil2">
+        <h1>Editar datos</h1>
+        <hr style="width:50%; height:10px;background-color: white;">
+        <input class="inputForm" #nameM placeholder="Nombre">
+        <input class="inputForm" #surnameM placeholder=Apellidos>
+        <input class="inputForm" #emailM placeholder="Correo">
+        <input class="inputForm" #urlM placeholder="URL">
+        <button on-click=enviar(nameM,surnameM,emailM,urlM) class="btnRegister">MODIFICAR</button>
+    </div>
+</div>

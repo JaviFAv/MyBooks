@@ -1,0 +1,16 @@
+.homeMain {
+    height: 80vh;
+    background-image: url("../../../assets/img/libros_portada.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.homeText {
+    background-color: #b39321;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}

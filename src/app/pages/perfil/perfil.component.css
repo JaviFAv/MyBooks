@@ -1,0 +1,68 @@
+.perfilMain {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../assets/img/libros_portada.png");
+    background-size: cover;
+}
+
+.imgPerfil {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+
+}
+
+.perfil1 {
+    height: 600px;
+    width: 500px;
+    background-color: #87b67f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px 0px 0px 20px;
+    opacity: 80%;
+}
+
+.perfil2 {
+    height: 600px;
+    width: 500px;
+    background-color: #87b67f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 0px 20px 20px 0px;
+    opacity: 80%;
+}
+
+
+.datoPerfil {
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+}
+
+.inputForm {
+    padding: 20px;
+    background-color: #c2b16b;
+}
+
+.btnRegister {
+    padding: 10px;
+    background-color: #76893f;
+    border: 1px solid black;
+    border-radius: 28px;
+}

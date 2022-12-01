@@ -1,0 +1,16 @@
+<div class="card" *ngFor="let libro of libros; index as i">
+    <img src={{libros[i].Photo}} alt={{libros[i].titulo}} style="width:100%">
+    <div class="bigContainer">
+        <div class="container">
+            <h5>{{libros[i].tipoLibro}}</h5>
+            <hr width="100%">
+            <p class="titulo">{{libros[i].titulo}}</p>
+            <p>Autor: {{libros[i].autor}}</p>
+            <p>Ref-{{libros[i].id_libro}}</p>
+
+
+        </div>
+        <h2 class="precio">{{libros[i].precio}}.99€</h2>
+        <button class="btnComprar">Comprar</button>
+    </div>
+</div>

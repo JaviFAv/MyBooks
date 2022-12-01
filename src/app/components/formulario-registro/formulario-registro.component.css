@@ -1,0 +1,24 @@
+.formBody {
+    height: 550px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px;
+}
+
+.inputForm {
+    padding: 10px;
+}
+
+.btnRegister {
+    padding: 10px;
+    background-color: #76893f;
+    border: 1px solid black;
+    border-radius: 28px;
+}

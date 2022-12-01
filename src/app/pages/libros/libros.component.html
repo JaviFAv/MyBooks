@@ -1,0 +1,30 @@
+<div class="cardContainer">
+    <div class="card" *ngFor="let libro of libros; index as i">
+        <img src={{libros[i].Photo}} alt={{libros[i].titulo}} style="width:100%">
+        <div class="bigContainer">
+            <div class="container">
+                <h5>{{libros[i].tipoLibro}}</h5>
+                <hr width="100%">
+                <p class="titulo">{{libros[i].titulo}}</p>
+                <p>Autor: {{libros[i].autor}}</p>
+                <p>{{libros[i].id_libro | ref}}</p>
+
+
+            </div>
+            <h2 class="precio">{{libros[i].precio}}.99€</h2>
+            <button [ngClass]="i%2 === 0 ? 'btnComprar1' : 'btnComprar2' ">Comprar</button>
+        </div>
+    </div>
+
+    <div *ngIf="libros.length === 0" class="noLibros">No hay libros</div>
+
+    <form class="formulario">
+        <input class="inputForm" #titulo placeholder="Titulo">
+        <input class="inputForm" #tipoLibro placeholder="Tapa blanda/dura">
+        <input class="inputForm" #autor placeholder="Autor">
+        <input class="inputForm" #precio placeholder="Precio">
+        <input class="inputForm" #Photo placeholder="Foto">
+        <input class="inputForm" #id_libro placeholder="Codigo Libro">
+    </form>
+    <button on-click=addLibro(titulo,tipoLibro,autor,precio,Photo,id_libro) class="btnComprar1">Insertar Libro</button>
+</div>

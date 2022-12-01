@@ -1,0 +1,27 @@
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.elements {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
